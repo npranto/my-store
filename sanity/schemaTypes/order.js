@@ -54,15 +54,13 @@ export const order = {
     {
       name: "shippingAddress",
       title: "Shipping Address",
-      type: "reference",
-      of: [{ type: "address" }], // Use the address schema
+      type: "address",
       validation: (Rule) => Rule.required(),
     },
     {
       name: "billingAddress",
       title: "Billing Address",
-      type: "reference",
-      of: [{ type: "address" }], // Use the address schema
+      type: "address",
       validation: (Rule) => Rule.required(),
     },
   ],

@@ -42,7 +42,7 @@ export const product = {
       name: "variations",
       title: "Variations",
       type: "array",
-      of: [{ type: "productVariations" }],
+      of: [{ type: "reference", to: [{ type: "productVariation" }] }],
     },
     {
       name: "slug",
