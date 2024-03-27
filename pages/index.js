@@ -1,3 +1,5 @@
+import FeaturedProducts from "@/components/featured-products";
+import Footer from "@/components/footer";
 import Hero from "@/components/hero";
 import NavBar from "@/components/navbar";
 import { Inter } from "next/font/google";
@@ -11,6 +13,8 @@ export default function Home() {
     >
       <NavBar />
       <Hero />
+      <FeaturedProducts />
+      <Footer />
     </main>
   );
 }

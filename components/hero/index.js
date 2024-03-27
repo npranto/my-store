@@ -4,7 +4,7 @@ import styles from "./hero.module.css";
 export default function Hero() {
   return (
     <div
-      className={`${styles["heroComponent"]} hero rounded-md min-h-screen bg-base-200`}
+      className={`${styles["HeroComponent"]} shadow-md animate-circular-float hero rounded-md min-h-screen bg-base-200`}
     >
       <div className="hero-content text-center">
         <div className="max-w-md">
