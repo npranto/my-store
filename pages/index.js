@@ -1,20 +1,21 @@
 import FeaturedProducts from "@/components/featured-products";
-import Footer from "@/components/footer";
 import Hero from "@/components/hero";
-import NavBar from "@/components/navbar";
-import { Inter } from "next/font/google";
+import { client } from "@/sanity/lib/client";
 
-const inter = Inter({ subsets: ["latin"] });
-
-export default function Home() {
+export default function Home(props) {
+  console.log({ props });
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-between p-2 md:p-8 ${inter.className}`}
-    >
-      <NavBar />
+    <>
       <Hero />
-      <FeaturedProducts />
-      <Footer />
-    </main>
+      <FeaturedProducts products={props.products} />
+    </>
   );
 }
+
+export const getServerSideProps = async () => {
+  const query = `*[_type == "product"]`;
+  const products = await client.fetch(query);
+  return {
+    props: { products },
+  };
+};
