@@ -18,3 +18,17 @@ body {
     text-wrap: balance;
   }
 }
+
+@keyframes circular-float {
+  0% {
+    transform: rotate(0deg) translate3d(3px, 0, 0) rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg) translate3d(3px, 0, 0) rotate(-360deg);
+  }
+}
+
+.animate-circular-float {
+  animation: circular-float 8s infinite alternate ease-in-out;
+}
