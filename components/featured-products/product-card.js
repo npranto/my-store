@@ -11,9 +11,9 @@ export default function ProductCard() {
       </figure>
       <div className="card-body">
         <h2 className="card-title">Nike Air Max Dn</h2>
-        <p>Men&apos;s Shoes</p>
+        <p>$160</p>
         <div className="card-actions justify-end">
-          <button className="btn btn-primary">$160</button>
+          <button className="btn w-full sm:max-w-28 btn-primary">Buy</button>
         </div>
       </div>
     </div>
