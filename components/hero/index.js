@@ -8,7 +8,7 @@ export default function Hero() {
     >
       <div className="hero-content text-center">
         <div className="max-w-md">
-          <h1 className="text-5xl font-bold">
+          <h1 className="text-3xl sm:text-5xl font-bold">
             Find the perfect gift for everyone on your list
           </h1>
 

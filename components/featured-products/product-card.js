@@ -1,19 +1,34 @@
+import { urlForImage } from "@/sanity/lib/image";
+import Link from "next/link";
 import React from "react";
 
-export default function ProductCard() {
+export default function ProductCard({ product }) {
+  if (
+    !product ||
+    !product?.name ||
+    !product?.productMedia?.length ||
+    !product?.price ||
+    !product?.slug?.current
+  )
+    return null;
   return (
-    <div className="card max-w-96 flex-grow bg-base-100 shadow-xl">
-      <figure>
+    <div className="card h-full max-w-96 bg-white shadow-xl">
+      <figure className="px-[10%] pt-[10%]">
         <img
-          src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-          alt="Shoes"
+          src={urlForImage(product.productMedia[0])}
+          alt="Main product cover"
+          className="max-h-36 object-cover"
         />
       </figure>
       <div className="card-body">
-        <h2 className="card-title">Nike Air Max Dn</h2>
-        <p>$160</p>
+        <h2 className="card-title font-light text-lg line-clamp-3">
+          {product.name}
+        </h2>
+        <p className="font-bold text-2xl">${product.price}</p>
         <div className="card-actions justify-end">
-          <button className="btn w-full sm:max-w-28 btn-primary">Buy</button>
+          <Link href={`/product/${product.slug.current}`}>
+            <button className="btn w-full sm:max-w-28 btn-primary">Buy</button>
+          </Link>
         </div>
       </div>
     </div>

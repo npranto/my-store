@@ -22,8 +22,8 @@ export const product = {
       type: "text",
     },
     {
-      name: "skuId",
-      title: "SKU ID",
+      name: "sku",
+      title: "SKU Identifier",
       type: "string",
     },
     {
