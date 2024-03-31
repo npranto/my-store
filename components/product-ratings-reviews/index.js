@@ -3,7 +3,7 @@ import React from "react";
 
 export default function ProductRatingsReviews() {
   return (
-    <section class="py-14 relative w-full">
+    <section class="pt-14 relative w-full">
       <div class="w-full max-w-7xl px-4 md:px-5 lg-6 mx-auto">
         <div class="w-full">
           <h2 class="font-manrope font-bold text-2xl text-black mb-8 text-center">
@@ -260,7 +260,7 @@ export default function ProductRatingsReviews() {
             </div>
           </div>
 
-          <div class="py-8 max-xl:max-w-2xl">
+          <div class="py-8 max-w-2xl">
             <div class="flex items-center gap-3 mb-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -384,7 +384,7 @@ export default function ProductRatingsReviews() {
               designers looking to streamline their workflow.
             </p>
           </div>
-          <div class="py-8 max-xl:max-w-2xl">
+          <div class="py-8 max-w-2xl">
             <div class="flex items-center gap-3 mb-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

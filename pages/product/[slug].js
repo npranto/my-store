@@ -11,7 +11,7 @@ export default function Product({ product }) {
   console.log(product);
 
   return (
-    <div className="bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700 py-8">
+    <div className="bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700 py-8 rounded-xl">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row -mx-4">
           <ProductMediaGallery product={product} />
