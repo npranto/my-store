@@ -4,7 +4,9 @@ export default function NavBar() {
   return (
     <div className="navbar bg-base-100">
       <div className="flex-1">
-        <a className="btn btn-ghost text-3xl font-bold">MyStore</a>
+        <a className="btn btn-ghost text-3xl border-l-2 border-r-2 border-spacing-1 border-l-gray-300 border-r-gray-300 text-gray-400 font-bold">
+          MyStore
+        </a>
       </div>
       <div className="flex-none">
         <div className="dropdown dropdown-end">
