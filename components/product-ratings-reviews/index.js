@@ -7,7 +7,7 @@ export default function ProductRatingsReviews() {
       <div class="w-full max-w-7xl px-4 md:px-5 lg-6 mx-auto">
         <div class="w-full">
           <h2 class="font-manrope font-bold text-2xl text-black mb-8 text-center">
-            Our customer reviews
+            Ratings & Reviews
           </h2>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pb-8 max-xl:mx-auto">
             <div class="box flex flex-col gap-y-4 w-full ">
