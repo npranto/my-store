@@ -6,6 +6,7 @@ import ProductDescription from "@/components/product-description";
 import ProductActions from "@/components/product-actions";
 import ProductMediaGallery from "@/components/product-media-gallery";
 import ProductRatingsReviews from "@/components/product-ratings-reviews";
+import SimilarProducts from "@/components/similar-products";
 
 export default function Product({ product }) {
   console.log(product);
@@ -24,6 +25,9 @@ export default function Product({ product }) {
         </div>
         <div className="flex flex-col md:flex-row -mx-4">
           <ProductRatingsReviews product={product} />
+        </div>
+        <div className="flex flex-col md:flex-row -mx-4">
+          <SimilarProducts product={product} />
         </div>
       </div>
     </div>
