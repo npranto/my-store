@@ -8,7 +8,7 @@ import ProductMediaGallery from "@/components/product-media-gallery";
 import ProductRatingsReviews from "@/components/product-ratings-reviews";
 import SimilarProducts from "@/components/similar-products";
 
-export default function Product({ product }) {
+export default function ProductPage({ product }) {
   console.log(product);
 
   return (

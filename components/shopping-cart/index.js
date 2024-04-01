@@ -599,7 +599,7 @@ export default function ShoppingCart() {
           </div>
         </div>
 
-        <div className="subtotal-details">
+        <div className="subtotal-info">
           <div class="flex flex-col md:flex-row items-center md:items-center justify-between lg:px-6 pb-6 border-b border-gray-200 max-lg:max-w-lg">
             <h5 class="text-gray-500 font-manrope font-semibold text-xl leading-9 w-full max-md:text-center max-md:mb-4">
               Subtotal

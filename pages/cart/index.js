@@ -1,6 +1,6 @@
 import ShoppingCart from "@/components/shopping-cart";
 
-export default function Cart(props) {
+export default function CartPage(props) {
   return (
     <>
       <ShoppingCart />
