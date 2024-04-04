@@ -1,12 +1,16 @@
+import Link from "next/link";
 import React from "react";
 
 export default function NavBar() {
   return (
     <div className="navbar bg-base-100">
       <div className="flex-1">
-        <a className="btn btn-ghost text-3xl border-l-2 border-r-2 border-spacing-1 border-l-gray-300 border-r-gray-300 text-gray-400 font-bold">
+        <Link
+          href={"/"}
+          className="btn btn-ghost text-3xl border-l-2 border-r-2 border-spacing-1 border-l-gray-300 border-r-gray-300 text-gray-400 font-bold"
+        >
           MyStore
-        </a>
+        </Link>
       </div>
       <div className="flex-none">
         <div className="dropdown dropdown-end">
@@ -48,10 +52,47 @@ export default function NavBar() {
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
             <li>
-              <a className="justify-between">Profile</a>
+              <Link href="/" className="justify-between">
+                Home
+              </Link>
             </li>
             <li>
-              <a>Settings</a>
+              <Link href="/cart" className="justify-between">
+                Cart
+              </Link>
+            </li>
+            <li>
+              <Link href="/order-confirmation" className="justify-between">
+                Order Confirmation
+              </Link>
+            </li>
+            <li>
+              <Link href="/order-summary" className="justify-between">
+                Order Summary
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/product/apple-6-6-2m-usb-type-c-to-lightning-charging-cable-white"
+                className="justify-between"
+              >
+                Product Page
+              </Link>
+            </li>
+            <li>
+              <Link href="/wishlist" className="justify-between">
+                Wishlist
+              </Link>
+            </li>
+            <li>
+              <Link href="/profile" className="justify-between">
+                Profile
+              </Link>
+            </li>
+            <li>
+              <Link href="/settings" className="justify-between">
+                Settings
+              </Link>
             </li>
             <li>
               <a>Logout</a>

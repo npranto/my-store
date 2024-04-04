@@ -16,7 +16,7 @@ export default function DefaultLayout({ children }) {
         <NavBar />
       </header>
       <main
-        className={`flex min-h-screen flex-col items-center justify-between p-2 md:p-8 ${inter.className}`}
+        className={`flex min-h-screen flex-col justify-between p-2 md:p-8 ${inter.className}`}
       >
         {children}
       </main>
