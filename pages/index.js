@@ -1,6 +1,7 @@
+import { client } from "@/sanity/lib/client";
 import FeaturedProducts from "@/components/featured-products";
 import Hero from "@/components/hero";
-import { client } from "@/sanity/lib/client";
+import TestCart from "@/components/test-cart";
 
 export default function HomePage(props) {
   console.log({ props });
@@ -8,6 +9,7 @@ export default function HomePage(props) {
     <>
       <Hero />
       <FeaturedProducts products={props.products} />
+      {/* <TestCart /> */}
     </>
   );
 }
