@@ -4,7 +4,7 @@ export default function ProductCard() {
   return (
     <a
       href="#/"
-      className="mx-auto sm:mr-0 group cursor-pointer lg:mx-auto bg-white transition-all duration-500 p-4 rounded-md"
+      className="mx-auto sm:mr-0 group cursor-pointer lg:mx-auto bg-white transition-all duration-500"
     >
       <div className="">
         <img

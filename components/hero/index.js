@@ -1,26 +1,31 @@
 import React from "react";
-import styles from "./hero.module.css";
 
 export default function Hero() {
   return (
-    <div
-      className={`${styles["HeroComponent"]} shadow-md animate-circular-float hero rounded-md min-h-screen bg-base-200`}
-    >
-      <div className="hero-content text-center">
-        <div className="max-w-md">
-          <h1 className="text-3xl sm:text-5xl font-bold">
-            Find the perfect gift for everyone on your list
+    <section className="bg-gray-900 text-white rounded-lg">
+      <div className="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-4/6 lg:items-center">
+        <div className="mx-auto max-w-3xl text-center">
+          <h1 className="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl">
+            Find the perfect gift
+            <span className="sm:block"> for everyone on your list </span>
           </h1>
 
-          <p className="py-6">
+          <p className="mx-auto mt-4 max-w-xl sm:text-xl/relaxed">
             Our online store has everything you need this holiday season. From
             the latest gadgets and electronics to fashion, home goods, toys and
             more, we make gift giving easy.
           </p>
 
-          <button className="btn btn-primary">Start Shopping</button>
+          <div className="mt-8 flex flex-wrap justify-center gap-4">
+            <a
+              className="block w-full rounded border border-blue-600 bg-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-opacity-75 sm:w-auto"
+              href="#"
+            >
+              Start Shopping
+            </a>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

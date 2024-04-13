@@ -3,7 +3,7 @@ import React from "react";
 export default function PaymentDetails() {
   return (
     <div className="shipping-details w-full max-w-sm md:max-w-3xl xl:max-w-sm flex items-start flex-col gap-8 max-xl:mx-auto">
-      <div className="w-full flex flex-col justify-center space-y-6           p-6 border border-gray-200 rounded-3xl group transition-all duration-500 hover:border-gray-400 ">
+      <div className="w-full flex flex-col justify-center space-y-6           p-6 border border-gray-200 rounded-lg group transition-all duration-500 hover:border-gray-400 ">
         <h3 className="font-manrope font-bold text-3xl leading-10 text-black pb-6 border-b border-gray-200 ">
           Payment
         </h3>

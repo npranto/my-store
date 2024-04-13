@@ -1,17 +1,16 @@
 import CancelOrderBtn from "@/components/cancel-order-btn";
+import PageHeader from "@/components/page-header";
 import TrackYourOrderBtn from "@/components/track-your-order-btn";
 import React from "react";
 
 export default function OrderConfirmationPage() {
   return (
-    <section className="py-10 relative">
-      <div className="w-full max-w-7xl px-4 md:px-5 lg-6 mx-auto">
-        <h2 className="font-manrope font-bold text-4xl leading-10 text-black text-center">
-          Payment Successful
-        </h2>
-        <p className="mt-4 font-normal text-lg leading-8 text-gray-500 mb-11 text-center">
-          Thanks for making a purchase, we will be shipping your order soon!
-        </p>
+    <section className="relative">
+      <div className="w-full">
+        <PageHeader
+          header="Order Confirmation"
+          description="Thanks for making a purchase, we will be shipping your order soon!"
+        />
         <div className="main-box border border-gray-200 rounded-xl pt-6 max-w-xl max-lg:mx-auto lg:max-w-full">
           <div className="flex flex-col lg:flex-row lg:items-center justify-between px-6 pb-6 border-b border-gray-200">
             <div className="data">
@@ -19,7 +18,7 @@ export default function OrderConfirmationPage() {
                 Confirmation:{" "}
                 <span className="text-gray-600 font-normal">#10234987</span>
               </p>
-              <p className="font-semibold text-base leading-7 text-black mt-4">
+              <p className="font-semibold text-base leading-7 text-black">
                 Payment Date:{" "}
                 <span className="text-gray-600 font-normal">
                   {" "}
@@ -84,7 +83,7 @@ export default function OrderConfirmationPage() {
                         <p className="font-medium text-sm whitespace-nowrap leading-6 text-black">
                           Expected Delivery Time
                         </p>
-                        <p className="font-medium text-base whitespace-nowrap leading-7 lg:mt-3 text-emerald-500">
+                        <p className="font-medium text-base whitespace-nowrap leading-7 lg:mt-3 text-gray-500">
                           March 23, 2021
                         </p>
                       </div>
@@ -148,7 +147,7 @@ export default function OrderConfirmationPage() {
                         <p className="font-medium text-sm whitespace-nowrap leading-6 text-black">
                           Expected Delivery Time
                         </p>
-                        <p className="font-medium text-base whitespace-nowrap leading-7 lg:mt-3 text-emerald-500">
+                        <p className="font-medium text-base whitespace-nowrap leading-7 lg:mt-3 text-gray-500">
                           March 23, 2021
                         </p>
                       </div>

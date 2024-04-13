@@ -1,6 +1,6 @@
 import Head from "next/head";
 import React from "react";
-import NavBar from "../navbar";
+import Header from "../header";
 import Footer from "../footer";
 import { Inter } from "next/font/google";
 
@@ -12,15 +12,13 @@ export default function DefaultLayout({ children }) {
       <Head>
         <title>MyStore</title>
       </Head>
-      <header>
-        <NavBar />
-      </header>
+      <Header className="bg-white mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8" />
       <main
-        className={`flex min-h-screen flex-col justify-between p-2 md:p-8 ${inter.className}`}
+        className={`flex min-h-screen flex-col justify-between bg-white mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 ${inter.className}`}
       >
         {children}
       </main>
-      <Footer />
+      <Footer className="bg-white mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8" />
     </>
   );
 }

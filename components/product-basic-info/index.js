@@ -7,11 +7,11 @@ export default function ProductBasicInfo({ product }) {
         {product.name}
       </h2>
       <p className="text-gray-600 dark:text-gray-300 text-sm mb-4">
-        Sku: {product.sku}
+        SKU: {product.sku}
       </p>
       <div className="flex items-center mb-4">
         <div className="mr-4">
-          <span className="text-gray-600 font-bold text-3xl dark:text-gray-300">
+          <span className="text-green-600 font-bold text-4xl dark:text-green-300">
             $29.99
           </span>
         </div>

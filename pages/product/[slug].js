@@ -9,26 +9,22 @@ import ProductRatingsReviews from "@/components/product-ratings-reviews";
 import SimilarProducts from "@/components/similar-products";
 
 export default function ProductPage({ product }) {
-  console.log(product);
-
   return (
-    <div className="bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700 py-8 rounded-xl">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row -mx-4">
-          <ProductMediaGallery product={product} />
-          <div className="md:flex-1 px-4">
-            <ProductBasicInfo product={product} />
-            <ProductVariations product={product} />
-            <ProductDescription product={product} />
-            <ProductActions product={product} />
-          </div>
+    <div className="bg-white py-8 rounded-lg">
+      <div className="flex flex-col md:flex-row md:gap-4">
+        <ProductMediaGallery product={product} />
+        <div className="md:flex-1">
+          <ProductBasicInfo product={product} />
+          <ProductVariations product={product} />
+          <ProductDescription product={product} />
+          <ProductActions product={product} />
         </div>
-        <div className="flex flex-col md:flex-row -mx-4">
-          <ProductRatingsReviews product={product} />
-        </div>
-        <div className="flex flex-col md:flex-row -mx-4">
-          <SimilarProducts product={product} />
-        </div>
+      </div>
+      <div className="flex flex-col md:flex-row">
+        <ProductRatingsReviews product={product} />
+      </div>
+      <div className="flex flex-col md:flex-row">
+        <SimilarProducts product={product} />
       </div>
     </div>
   );

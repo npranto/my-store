@@ -2,14 +2,10 @@ import React from "react";
 
 export default function ShoppingCart() {
   return (
-    <div className="w-full max-w-7xl px-4 md:px-5 lg-6 mx-auto">
-      <h2 className="font-manrope font-bold text-2xl text-black mb-8 text-left">
-        Cart
-      </h2>
-
+    <div className="w-full">
       <div className="flex flex-col lg:flex-row gap-4">
         <div className="cart-items md:grid md:grid-cols-2 lg:grid-cols-1 gap-4 lg:max-h-[75vh] lg:max-w-[60vw] overflow-auto">
-          <div className="rounded-3xl border-2 border-gray-200 p-4 lg:p-8 grid grid-cols-12 mb-8 max-lg:max-w-lg max-lg:mx-auto gap-y-4">
+          <div className="rounded-lg border-2 border-gray-100 p-4 lg:p-8 grid grid-cols-12 mb-8 max-lg:max-w-lg max-lg:mx-auto gap-y-4">
             <div className="col-span-12 lg:col-span-2 img box">
               <img
                 src="https://pagedone.io/asset/uploads/1701162826.png"
@@ -58,7 +54,7 @@ export default function ShoppingCart() {
               </p>
               <div className="flex justify-between items-center">
                 <div className="flex items-center gap-4">
-                  <button className="group rounded-[50px] border border-gray-200 shadow-sm shadow-transparent p-2.5 flex items-center justify-center bg-white transition-all duration-500 hover:shadow-gray-200 hover:bg-gray-50 hover:border-gray-300 focus-within:outline-gray-300">
+                  <button className="group rounded-[50px] border border-gray-100 shadow-sm shadow-transparent p-2.5 flex items-center justify-center bg-white transition-all duration-500 hover:shadow-gray-200 hover:bg-gray-50 hover:border-gray-300 focus-within:outline-gray-300">
                     <svg
                       className="stroke-gray-900 transition-all duration-500 group-hover:stroke-black"
                       width="18"
@@ -107,7 +103,7 @@ export default function ShoppingCart() {
               </div>
             </div>
           </div>
-          <div className="rounded-3xl border-2 border-gray-200 p-4 lg:p-8 grid grid-cols-12 mb-8 max-lg:max-w-lg max-lg:mx-auto gap-y-4">
+          <div className="rounded-lg border-2 border-gray-100 p-4 lg:p-8 grid grid-cols-12 mb-8 max-lg:max-w-lg max-lg:mx-auto gap-y-4">
             <div className="col-span-12 lg:col-span-2 img box">
               <img
                 src="https://pagedone.io/asset/uploads/1701162839.png"
@@ -205,7 +201,7 @@ export default function ShoppingCart() {
               </div>
             </div>
           </div>
-          <div className="rounded-3xl border-2 border-gray-200 p-4 lg:p-8 grid grid-cols-12 mb-8 max-lg:max-w-lg max-lg:mx-auto gap-y-4">
+          <div className="rounded-lg border-2 border-gray-100 p-4 lg:p-8 grid grid-cols-12 mb-8 max-lg:max-w-lg max-lg:mx-auto gap-y-4">
             <div className="col-span-12 lg:col-span-2 img box">
               <img
                 src="https://pagedone.io/asset/uploads/1701162826.png"
@@ -303,7 +299,7 @@ export default function ShoppingCart() {
               </div>
             </div>
           </div>
-          <div className="rounded-3xl border-2 border-gray-200 p-4 lg:p-8 grid grid-cols-12 mb-8 max-lg:max-w-lg max-lg:mx-auto gap-y-4">
+          <div className="rounded-lg border-2 border-gray-100 p-4 lg:p-8 grid grid-cols-12 mb-8 max-lg:max-w-lg max-lg:mx-auto gap-y-4">
             <div className="col-span-12 lg:col-span-2 img box">
               <img
                 src="https://pagedone.io/asset/uploads/1701162839.png"
@@ -401,7 +397,7 @@ export default function ShoppingCart() {
               </div>
             </div>
           </div>
-          <div className="rounded-3xl border-2 border-gray-200 p-4 lg:p-8 grid grid-cols-12 mb-8 max-lg:max-w-lg max-lg:mx-auto gap-y-4">
+          <div className="rounded-lg border-2 border-gray-100 p-4 lg:p-8 grid grid-cols-12 mb-8 max-lg:max-w-lg max-lg:mx-auto gap-y-4">
             <div className="col-span-12 lg:col-span-2 img box">
               <img
                 src="https://pagedone.io/asset/uploads/1701162826.png"
@@ -499,7 +495,7 @@ export default function ShoppingCart() {
               </div>
             </div>
           </div>
-          <div className="rounded-3xl border-2 border-gray-200 p-4 lg:p-8 grid grid-cols-12 mb-8 max-lg:max-w-lg max-lg:mx-auto gap-y-4">
+          <div className="rounded-lg border-2 border-gray-100 p-4 lg:p-8 grid grid-cols-12 mb-8 max-lg:max-w-lg max-lg:mx-auto gap-y-4">
             <div className="col-span-12 lg:col-span-2 img box">
               <img
                 src="https://pagedone.io/asset/uploads/1701162839.png"
