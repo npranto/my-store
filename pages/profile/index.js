@@ -1,19 +1,13 @@
+import PageHeader from "@/components/page-header";
 import React from "react";
 
 export default function ProfilePage() {
   return (
-    <div className="max-w-screen-xl p-4 sm:p-6">
-      <div className="sm:flex sm:items-center sm:justify-between">
-        <div className="text-center sm:text-left">
-          <h1 className="text-2xl font-bold text-gray-900 sm:text-3xl">
-            Profile
-          </h1>
-
-          <p className="mt-1.5 text-sm text-gray-500">
-            Update your profile details and account settings
-          </p>
-        </div>
-      </div>
-    </div>
+    <>
+      <PageHeader
+        header="Profile"
+        description="Update your profile details and account settings"
+      />
+    </>
   );
 }

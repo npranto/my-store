@@ -4,7 +4,7 @@ export default function CartDetails() {
   return (
     <div className="cart-details w-full max-w-sm md:max-w-3xl max-xl:mx-auto">
       <div className="grid grid-cols-1 gap-6">
-        <div className="rounded-3xl p-6 bg-gray-100 border border-gray-100 flex flex-col md:flex-row md:items-center gap-5 transition-all duration-500 hover:border-gray-400">
+        <div className="rounded-lg p-6 bg-gray-100 border border-gray-100 flex flex-col md:flex-row md:items-center gap-5 transition-all duration-500 hover:border-gray-400">
           <div className="img-box ">
             <img
               src="https://pagedone.io/asset/uploads/1701167635.png"
@@ -33,7 +33,7 @@ export default function CartDetails() {
             </div>
           </div>
         </div>
-        <div className="rounded-3xl p-6 bg-gray-100 border border-gray-100 flex flex-col md:flex-row md:items-center gap-5 transition-all duration-500 hover:border-gray-400">
+        <div className="rounded-lg p-6 bg-gray-100 border border-gray-100 flex flex-col md:flex-row md:items-center gap-5 transition-all duration-500 hover:border-gray-400">
           <div className="img-box ">
             <img
               src="https://pagedone.io/asset/uploads/1701167635.png"
@@ -62,7 +62,7 @@ export default function CartDetails() {
             </div>
           </div>
         </div>
-        <div className="rounded-3xl p-6 bg-gray-100 border border-gray-100 flex flex-col md:flex-row md:items-center gap-5 transition-all duration-500 hover:border-gray-400">
+        <div className="rounded-lg p-6 bg-gray-100 border border-gray-100 flex flex-col md:flex-row md:items-center gap-5 transition-all duration-500 hover:border-gray-400">
           <div className="img-box ">
             <img
               src="https://pagedone.io/asset/uploads/1701167635.png"

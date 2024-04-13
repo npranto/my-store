@@ -36,7 +36,7 @@ export default function QuantityPicker() {
       </button>
       <input
         type="text"
-        className="flex-grow font-semibold text-gray-900 cursor-pointer text-lg p-2 w-full sm:max-w-[100px] outline-0 bg-transparent placeholder:text-gray-900 text-center hover:bg-gray-50"
+        className="flex-grow font-semibold text-gray-900 text-lg p-2 w-full sm:max-w-[100px] outline-0 bg-transparent placeholder:text-gray-900 text-center"
         placeholder="1"
       />
       <button className="group py-2 px-4 border border-gray-400 rounded-r-full bg-white transition-all duration-300 hover:bg-gray-50 hover:shadow-sm hover:shadow-gray-300">

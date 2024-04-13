@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function ProductVariations({ product }) {
-  if (!product.variations?.length) return null;
+  if (!product?.variations?.length) return null;
   return (
     <>
       <div className="mb-4 mt-8">
