@@ -611,7 +611,7 @@ export default function ShoppingCart() {
             <p className="font-normal text-sm leading-7 text-gray-500 text-left mb-5 mt-6">
               Shipping taxes, and discounts calculated at checkout
             </p>
-            <button className="w-full bg-gray-900 dark:bg-gray-600 text-white py-2 px-4 rounded-full font-bold hover:bg-gray-800 dark:hover:bg-gray-700">
+            <button className="w-full bg-gray-900 text-white py-2 px-4 rounded-full font-bold hover:bg-gray-800">
               Checkout
             </button>
           </div>
