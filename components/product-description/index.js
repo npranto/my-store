@@ -6,7 +6,7 @@ export default function ProductDescription({ product }) {
       <span className="font-bold text-gray-700">
         Description:
       </span>
-      <p className="text-gray-600 text-sm mt-2">
+      <p className="text-gray-600 text-sm mt-2 line-clamp-6">
         {product.description}
       </p>
     </div>

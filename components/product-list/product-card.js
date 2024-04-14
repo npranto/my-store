@@ -1,10 +1,11 @@
 import { urlForImage } from "@/sanity/lib/image";
+import Link from "next/link";
 import React from "react";
 
 export default function ProductCard({ product = {} }) {
   return (
-    <a
-      href="#/"
+    <Link
+      href={`/product/${product?.slug?.current || ''}`}
       className="w-full sm:mr-0 group cursor-pointer lg:mx-auto transition-all duration-500"
     >
       <div className="h-52 p-4 w-full rounded-lg overflow-hidden border shadow-md border-gray-100 group-hover:scale-105 transition-all ease-in-out flex items-center">
@@ -22,6 +23,6 @@ export default function ProductCard({ product = {} }) {
         </div>
         <p className="mt-1 font-bold text-xl leading-8"> ${product.price} </p>
       </div>
-    </a>
+    </Link>
   );
 }

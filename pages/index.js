@@ -3,6 +3,7 @@ import Hero from "@/components/hero";
 import FeaturedProducts from "@/components/featured-products";
 
 export default function HomePage(props) {
+  console.log({ props });
   return (
     <>
       <Hero />
