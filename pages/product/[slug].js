@@ -8,7 +8,7 @@ import ProductMediaGallery from "@/components/product-media-gallery";
 import ProductRatingsReviews from "@/components/product-ratings-reviews";
 import SimilarProducts from "@/components/similar-products";
 
-export default function ProductPage({ product }) {
+export default function ProductPage({ similarProducts = [], product = {} }) {
   return (
     <div className="bg-white py-8 rounded-lg">
       <div className="flex flex-col md:flex-row md:gap-4">
@@ -24,7 +24,7 @@ export default function ProductPage({ product }) {
         <ProductRatingsReviews product={product} />
       </div>
       <div className="flex flex-col md:flex-row">
-        <SimilarProducts product={product} />
+        <SimilarProducts products={similarProducts} />
       </div>
     </div>
   );
@@ -32,17 +32,19 @@ export default function ProductPage({ product }) {
 
 export const getServerSideProps = async (context) => {
   const { slug = "" } = context.query || {};
-
+  
   if (typeof slug !== "string" || !slug.length) {
     return {
       notFound: true,
     };
   }
-
-  const query = `*[_type == "product" && slug.current == "${slug}"][0]`;
-
+  
+  const similarProductsQuery = `*[_type == "product"]`;
+  const productQuery = `*[_type == "product" && slug.current == "${slug}"][0]`;
+  
   try {
-    const product = await client.fetch(query);
+    const similarProducts = await client.fetch(similarProductsQuery);
+    const product = await client.fetch(productQuery);
     if (!product || product === null) {
       return {
         notFound: true,
@@ -51,6 +53,7 @@ export const getServerSideProps = async (context) => {
     return {
       props: {
         product,
+        similarProducts,
       },
     };
   } catch (error) {

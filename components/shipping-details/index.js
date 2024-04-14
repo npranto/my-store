@@ -25,7 +25,7 @@ export default function ShippingDetails() {
               </p>
             </div>
           </div>
-          <p className="text-lg font-semibold leading-6 dark:text-white text-gray-800">
+          <p className="text-lg font-semibold leading-6 text-gray-800">
             $8.00
           </p>
         </div>

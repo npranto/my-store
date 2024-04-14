@@ -4,9 +4,9 @@ import React from "react";
 export default function ProductMediaGallery({ product }) {
   return (
     <div className="md:flex-1">
-      <div className="w-full md:w-auto h-auto md:max-h-[460px] md:max-w-[60vw] rounded-lg bg-gray-300 dark:bg-gray-700 mb-4">
+      <div className="w-full md:w-auto h-auto md:max-h-[460px] md:max-w-[60vw] rounded-lg mb-4">
         <img
-          className="w-full h-auto rounded-md"
+          className="w-full h-auto rounded-md max-w-[550px] mx-auto"
           src={urlForImage(product.productMedia[0])}
           alt="Product Main Image"
         />
@@ -16,7 +16,7 @@ export default function ProductMediaGallery({ product }) {
           {product.productMedia.map((secImages) => (
             <div
               key={secImages._key}
-              className="flex items-center border-2 border-gray-300 dark:border-gray-700 hover:border-gray-700 transition-colors p-2 rounded-md"
+              className="flex items-center border-2 border-gray-300 hover:border-gray-700 transition-colors p-2 rounded-md"
             >
               <img
                 className="h-auto max-w-full rounded-lg"

@@ -3,15 +3,15 @@ import React from "react";
 export default function ProductBasicInfo({ product }) {
   return (
     <>
-      <h2 className="text-2xl font-bold text-gray-800 dark:text-white mb-2">
+      <h2 className="text-2xl font-bold text-gray-800 mb-2">
         {product.name}
       </h2>
-      <p className="text-gray-600 dark:text-gray-300 text-sm mb-4">
+      <p className="text-gray-600 text-sm mb-4">
         SKU: {product.sku}
       </p>
       <div className="flex items-center mb-4">
         <div className="mr-4">
-          <span className="text-green-600 font-bold text-4xl dark:text-green-300">
+          <span className="text-green-600 font-bold text-4xl">
             $29.99
           </span>
         </div>
