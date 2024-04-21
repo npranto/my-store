@@ -11,7 +11,7 @@ export default function OrderConfirmationPage() {
           header="Order Confirmation"
           description="Thanks for making a purchase, we will be shipping your order soon!"
         />
-        <div className="main-box border border-gray-200 rounded-xl pt-6 max-w-xl max-lg:mx-auto lg:max-w-full">
+        <div className="main-box border border-gray-200 rounded-xl pt-6 max-lg:mx-auto lg:max-w-full">
           <div className="flex flex-col lg:flex-row lg:items-center justify-between px-6 pb-6 border-b border-gray-200">
             <div className="data">
               <p className="font-semibold text-base leading-7 text-black">

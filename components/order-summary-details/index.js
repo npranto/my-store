@@ -2,7 +2,7 @@ import React from "react";
 
 export default function OrderSummaryDetails() {
   return (
-    <div className="order-summary-details w-full max-w-sm md:max-w-3xl xl:max-w-sm flex items-start flex-col gap-8 max-xl:mx-auto">
+    <div className="order-summary-details w-full flex items-start flex-col gap-8 max-xl:mx-auto">
       <div className="p-6 border border-gray-200 rounded-lg w-full group transition-all duration-500 hover:border-gray-400 ">
         <h2 className="font-manrope font-bold text-3xl leading-10 text-black pb-6 border-b border-gray-200 ">
           Final Totals
