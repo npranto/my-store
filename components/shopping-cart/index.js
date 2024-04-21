@@ -5,7 +5,7 @@ export default function ShoppingCart() {
     <div className="w-full">
       <div className="flex flex-col lg:flex-row gap-4">
         <div className="cart-items md:grid md:grid-cols-2 lg:grid-cols-1 gap-4 lg:max-h-[75vh] lg:max-w-[60vw] overflow-auto">
-          <div className="rounded-lg border-2 border-gray-100 p-4 lg:p-8 grid grid-cols-12 mb-8 max-lg:max-w-lg max-lg:mx-auto gap-y-4">
+          <div className="rounded-lg border-2 border-gray-100 p-4 lg:p-8 grid grid-cols-12 mb-8 gap-y-4">
             <div className="col-span-12 lg:col-span-2 img box">
               <img
                 src="https://pagedone.io/asset/uploads/1701162826.png"
@@ -103,7 +103,7 @@ export default function ShoppingCart() {
               </div>
             </div>
           </div>
-          <div className="rounded-lg border-2 border-gray-100 p-4 lg:p-8 grid grid-cols-12 mb-8 max-lg:max-w-lg max-lg:mx-auto gap-y-4">
+          <div className="rounded-lg border-2 border-gray-100 p-4 lg:p-8 grid grid-cols-12 mb-8 gap-y-4">
             <div className="col-span-12 lg:col-span-2 img box">
               <img
                 src="https://pagedone.io/asset/uploads/1701162839.png"
@@ -201,7 +201,7 @@ export default function ShoppingCart() {
               </div>
             </div>
           </div>
-          <div className="rounded-lg border-2 border-gray-100 p-4 lg:p-8 grid grid-cols-12 mb-8 max-lg:max-w-lg max-lg:mx-auto gap-y-4">
+          <div className="rounded-lg border-2 border-gray-100 p-4 lg:p-8 grid grid-cols-12 mb-8 gap-y-4">
             <div className="col-span-12 lg:col-span-2 img box">
               <img
                 src="https://pagedone.io/asset/uploads/1701162826.png"
@@ -495,7 +495,7 @@ export default function ShoppingCart() {
               </div>
             </div>
           </div>
-          <div className="rounded-lg border-2 border-gray-100 p-4 lg:p-8 grid grid-cols-12 mb-8 max-lg:max-w-lg max-lg:mx-auto gap-y-4">
+          <div className="rounded-lg border-2 border-gray-100 p-4 lg:p-8 grid grid-cols-12 mb-8 gap-y-4">
             <div className="col-span-12 lg:col-span-2 img box">
               <img
                 src="https://pagedone.io/asset/uploads/1701162839.png"
@@ -596,7 +596,7 @@ export default function ShoppingCart() {
         </div>
 
         <div className="subtotal-info">
-          <div className="flex flex-col md:flex-row items-center md:items-center justify-between lg:px-6 pb-6 border-b border-gray-200 max-lg:max-w-lg">
+          <div className="flex flex-col md:flex-row items-center md:items-center justify-between lg:px-6 pb-6 border-b border-gray-200">
             <h5 className="text-gray-500 font-manrope font-semibold text-xl leading-9 w-full max-md:text-center max-md:mb-4">
               Subtotal
             </h5>
