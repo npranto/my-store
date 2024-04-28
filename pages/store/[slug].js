@@ -3,16 +3,21 @@ import Hero from "@/components/hero";
 import FeaturedProducts from "@/components/featured-products";
 import PageHeader from "@/components/page-header";
 import StoreStats from "@/components/store-stats";
+import SocialLinks from "@/components/social-links";
 
 export default function StorePage(props) {
   console.log({ props });
   const { name = "", tagline = "", products = [] } = props.store || {};
   return (
     <>
-      <PageHeader
-        header={name ? `Store: ${name}` : " Store: Anonymous"}
-        description={tagline}
-      />
+      <div className="flex flex-col sm:flex-row justify-between">
+        <PageHeader
+          header={name ? `Store: ${name}` : " Store: Anonymous"}
+          description={tagline}
+          className="grow"
+        />
+        <SocialLinks />
+      </div>
       <Hero />
       <FeaturedProducts products={products} />
       <StoreStats />
