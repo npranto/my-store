@@ -5,9 +5,10 @@ import PageHeader from "@/components/page-header";
 
 export default function UserDashboardPage() {
   const { user } = useUser();
-  console.log({ user });
 
   if (!user) return null;
+
+  console.log({ user });
 
   return (
     <section className="w-full">
