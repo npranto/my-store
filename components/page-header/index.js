@@ -6,7 +6,7 @@ export default function PageHeader({ header = "", description = "" }) {
   return (
     <div className="py-4 sm:py-6">
       <div className="sm:flex sm:items-center sm:justify-between">
-        <div className="text-center sm:text-left">
+        <div className="text-left">
           <h1 className="text-2xl font-bold text-gray-900 sm:text-3xl">
             {header}
           </h1>
