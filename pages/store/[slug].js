@@ -2,10 +2,11 @@ import { client } from "@/sanity/lib/client";
 import Hero from "@/components/hero";
 import FeaturedProducts from "@/components/featured-products";
 import PageHeader from "@/components/page-header";
+import StoreStats from "@/components/store-stats";
 
 export default function StorePage(props) {
   console.log({ props });
-  const { name = '', tagline = '', products = [] } = props.store || {};
+  const { name = "", tagline = "", products = [] } = props.store || {};
   return (
     <>
       <PageHeader
@@ -14,6 +15,7 @@ export default function StorePage(props) {
       />
       <Hero />
       <FeaturedProducts products={products} />
+      <StoreStats />
     </>
   );
 }
@@ -39,7 +41,7 @@ export const getServerSideProps = async (context) => {
 
   const store = (await client.fetch(storeQuery))[0];
 
-  if (!store || store === null || typeof store !== 'object') {
+  if (!store || store === null || typeof store !== "object") {
     return {
       notFound: true,
     };
@@ -47,9 +49,7 @@ export const getServerSideProps = async (context) => {
 
   const products = await Promise.all(
     store.products.map(async (productRef) => {
-      const fullProduct = await client.fetch(
-        `*[_id == "${productRef._ref}"]`
-      );
+      const fullProduct = await client.fetch(`*[_id == "${productRef._ref}"]`);
       return fullProduct[0];
     })
   );
@@ -69,4 +69,3 @@ export const getServerSideProps = async (context) => {
     },
   };
 };
-

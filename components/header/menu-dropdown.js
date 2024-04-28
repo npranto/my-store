@@ -53,7 +53,7 @@ export default function MenuDropdown() {
           <div className="p-2">
             {[
               { href: "/", label: "Home" },
-              { href: "/store/kevin-james", label: "Store Page" },
+              { href: "/store/kevin-s-hut", label: "Store Page" },
               { href: "/cart", label: "Cart" },
               { href: "/order-confirmation", label: "Order Confirmation" },
               { href: "/order-summary", label: "Order Summary" },
