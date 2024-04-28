@@ -1,8 +1,9 @@
-import Link from "next/link";
 import React from "react";
-import MenuDropdown from "./menu-dropdown";
-import CartBadge from "../cart-badge";
+import Link from "next/link";
 import Image from "next/image";
+import { SignedIn, UserButton } from "@clerk/nextjs";
+import CartBadge from "../cart-badge";
+import MenuDropdown from "./menu-dropdown";
 
 export default function Header({ className = "" }) {
   return (
@@ -24,12 +25,17 @@ export default function Header({ className = "" }) {
 
         <div className="md:flex md:items-center md:gap-12">
           <nav className="flex items-center gap-4">
-            <div className="block">
+            <div className="flex flex-col justify-center">
               <Link href={"/cart"}>
                 <CartBadge count={5} />
               </Link>
             </div>
-            <div className="block">
+            <SignedIn>
+              <div className="flex flex-col justify-center">
+                <UserButton className="h-full" afterSignOutUrl="/" />
+              </div>
+            </SignedIn>
+            <div className="flex flex-col justify-center">
               <MenuDropdown />
             </div>
           </nav>
