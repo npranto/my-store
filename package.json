@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@clerk/nextjs": "^5.0.3",
     "@sanity/image-url": "^1.0.2",
     "@sanity/vision": "^3.35.2",
     "next": "14.1.4",
