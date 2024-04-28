@@ -1,9 +1,9 @@
-import Link from "next/link";
 import React from "react";
-import MenuDropdown from "./menu-dropdown";
-import CartBadge from "../cart-badge";
+import Link from "next/link";
 import Image from "next/image";
 import { SignedIn, UserButton } from "@clerk/nextjs";
+import CartBadge from "../cart-badge";
+import MenuDropdown from "./menu-dropdown";
 
 export default function Header({ className = "" }) {
   return (

@@ -2,7 +2,6 @@ import React from "react";
 import { getAuth } from "@clerk/nextjs/server";
 import { useUser } from "@clerk/nextjs";
 import PageHeader from "@/components/page-header";
-import UserDetails from "./UserDetails";
 
 export default function UserDashboardPage() {
   const { user } = useUser();
@@ -16,7 +15,7 @@ export default function UserDashboardPage() {
         header="Dashboard"
         description={`Welcome back, ${user.firstName}`}
       />
-      <UserDetails />
+      <pre>{JSON.stringify(user, null, 2)}</pre>
     </section>
   );
 }
