@@ -32,19 +32,7 @@ export default function Header({ className = "" }) {
             </div>
             <SignedIn>
               <div className="flex flex-col justify-center">
-                <UserButton
-                  className="h-full"
-                  afterSignOutUrl="/"
-                  appearance={{
-                    elements: {
-                      userButtonTrigger: {
-                        "&:focus": {
-                          boxShadow: "#7857FF 0px 0px 0px 3px",
-                        },
-                      },
-                    },
-                  }}
-                />
+                <UserButton className="h-full" afterSignOutUrl="/" />
               </div>
             </SignedIn>
             <div className="flex flex-col justify-center">
