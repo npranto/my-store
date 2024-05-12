@@ -8,7 +8,7 @@ import React from "react";
 
 export default function OrderSummaryPage() {
   return (
-    <section className="w-full relative">
+    <section className="w-full relative" data-page-id="order-summary">
       <div className="w-full lg-6 mx-auto">
         <PageHeader
           header="Order Summary"

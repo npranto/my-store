@@ -64,7 +64,7 @@ export default function UserDashboardPage() {
   if (!user) return null;
 
   return (
-    <section className="w-full">
+    <section className="w-full" data-page-id="user/dashboard">
       <PageHeader
         header="Dashboard"
         description={`Welcome back, ${user.firstName}`}

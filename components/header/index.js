@@ -7,7 +7,7 @@ import MenuDropdown from "./menu-dropdown";
 
 export default function Header({ className = "" }) {
   return (
-    <header className={`bg-white ${className}`}>
+    <header className={`bg-white ${className}`} data-component-id="header">
       <div className="flex h-16 items-center justify-between">
         <div className="flex-1 md:flex md:items-center md:gap-12">
           <Link href={"/"} className="btn text-3xl text-gray-400 font-bold">

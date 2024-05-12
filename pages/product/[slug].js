@@ -11,8 +11,8 @@ import PriceHistoryGraph from "@/components/price-history-graph";
 
 export default function ProductPage({ similarProducts = [], product = {} }) {
   return (
-    <div className="bg-white py-8 rounded-lg">
-      <div className="flex flex-col md:flex-row md:gap-4">
+    <div className="bg-white py-8 rounded-lg" data-page-id="product">
+      <div className="flex flex-col md:flex-row gap-4">
         <ProductMediaGallery product={product} />
         <div className="md:flex-1">
           <ProductBasicInfo product={product} />

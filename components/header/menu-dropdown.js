@@ -27,7 +27,11 @@ export default function MenuDropdown() {
   }, [menuDropdownRef]);
 
   return (
-    <div className="relative" ref={menuDropdownRef}>
+    <div
+      className="relative"
+      ref={menuDropdownRef}
+      data-component-id="header/menu-dropdown"
+    >
       <button
         className="flex items-center overflow-hidden rounded-md border bg-white p-2 text-sm text-gray-600 hover:bg-gray-50 hover:text-gray-700"
         onClick={toggleDropdown}

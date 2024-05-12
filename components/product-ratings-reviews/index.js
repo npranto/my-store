@@ -3,7 +3,10 @@ import React from "react";
 
 export default function ProductRatingsReviews() {
   return (
-    <section className="pt-14 relative w-full">
+    <section
+      className="pt-14 relative w-full"
+      data-component-id="product-ratings-reviews"
+    >
       <div className="w-full">
         <h2 className="font-manrope font-bold text-2xl text-black mb-8 text-center">
           Ratings & Reviews

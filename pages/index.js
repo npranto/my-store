@@ -7,14 +7,14 @@ import SearchBar from "@/components/search-bar";
 export default function HomePage(props) {
   console.log({ props });
   return (
-    <>
+    <section data-page-id="home">
       <div className="flex flex-col sm:flex-row justify-between">
         <PageHeader header="Home" />
         <SearchBar />
       </div>
       <Hero />
       <FeaturedProducts products={props.products} />
-    </>
+    </section>
   );
 }
 

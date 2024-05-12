@@ -9,7 +9,7 @@ export default function StorePage(props) {
   console.log({ props });
   const { name = "", tagline = "", products = [] } = props.store || {};
   return (
-    <>
+    <section data-page-id="store">
       <div className="flex flex-col sm:flex-row justify-between">
         <PageHeader
           header={name ? `Store: ${name}` : " Store: Anonymous"}
@@ -21,7 +21,7 @@ export default function StorePage(props) {
       <Hero />
       <FeaturedProducts products={products} />
       <StoreStats />
-    </>
+    </section>
   );
 }
 
