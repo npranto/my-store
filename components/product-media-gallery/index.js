@@ -29,7 +29,6 @@ export default function ProductMediaGallery({ product }) {
               }`}
               onClick={() => setActiveImage(secImages)}
               onMouseEnter={() => setActiveImage(secImages)}
-              onMouseLeave={() => setActiveImage(secImages)}
             >
               <Image
                 className="max-w-[100%] max-h-[100%] object-cover mx-auto"
