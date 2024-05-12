@@ -2,14 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "i.ibb.co",
-        port: "",
-      },
-    ],
-    domains: ["cdn.sanity.io"],
+    domains: ["cdn.sanity.io", "pagedone.io", "i.ibb.co"],
   },
 };
 
