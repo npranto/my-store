@@ -2,7 +2,10 @@ import React from "react";
 
 export default function ShippingDetails() {
   return (
-    <div className="shipping-details w-full flex items-start flex-col gap-8 max-xl:mx-auto">
+    <div
+      className="shipping-details w-full flex items-start flex-col gap-8 max-xl:mx-auto"
+      data-component-id="shipping-details"
+    >
       <div className="w-full flex flex-col justify-center space-y-6           p-6 border border-gray-200 rounded-lg group transition-all duration-500 hover:border-gray-400 ">
         <h3 className="font-manrope font-bold text-3xl leading-10 text-black pb-6 border-b border-gray-200 ">
           Shipping
@@ -25,9 +28,7 @@ export default function ShippingDetails() {
               </p>
             </div>
           </div>
-          <p className="text-lg font-semibold leading-6 text-gray-800">
-            $8.00
-          </p>
+          <p className="text-lg font-semibold leading-6 text-gray-800">$8.00</p>
         </div>
         <div className="flex justify-center md:justify-start items-center md:items-start flex-col xl:mt-8">
           <p className="text-base font-bold text-black transition-all duration-500 group-hover:text-gray-700">

@@ -5,7 +5,7 @@ import React from "react";
 
 export default function OrderConfirmationPage() {
   return (
-    <section className="relative">
+    <section className="relative" data-page-id="order-confirmation">
       <div className="w-full">
         <PageHeader
           header="Order Confirmation"

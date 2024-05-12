@@ -3,7 +3,10 @@ import React from "react";
 
 export default function StoreStats() {
   return (
-    <section className="text-gray-600 body-font">
+    <section
+      className="text-gray-600 body-font"
+      data-component-id="store-stats"
+    >
       <div className="py-10 mx-auto">
         <div className="flex flex-wrap -m-4 text-center">
           <div className="p-4 md:w-1/3 sm:w-1/2 w-full">

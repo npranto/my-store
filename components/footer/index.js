@@ -2,7 +2,10 @@ import React from "react";
 
 export default function Footer({ className = "" }) {
   return (
-    <footer className={`footer flex gap-2 py-6 items-center ${className}`}>
+    <footer
+      className={`footer flex gap-2 py-6 items-center ${className}`}
+      data-component-id="footer"
+    >
       <div className="w-full bg-gray-100 mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row rounded-md">
         <p className="text-gray-500 text-sm text-center sm:text-left">
           © 2020 MyStore - All rights reserved

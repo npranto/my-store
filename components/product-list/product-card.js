@@ -5,8 +5,9 @@ import React from "react";
 export default function ProductCard({ product = {} }) {
   return (
     <Link
-      href={`/product/${product?.slug?.current || ''}`}
+      href={`/product/${product?.slug?.current || ""}`}
       className="w-full sm:mr-0 group cursor-pointer lg:mx-auto transition-all duration-500"
+      data-component-id="product-list/product-card"
     >
       <div className="h-52 p-4 w-full rounded-lg overflow-hidden border shadow-md border-gray-100 group-hover:scale-105 transition-all ease-in-out flex items-center">
         <img

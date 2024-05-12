@@ -2,7 +2,10 @@ import React from "react";
 
 export default function QuantityPicker() {
   return (
-    <div className="flex sm:items-center w-full">
+    <div
+      className="flex sm:items-center w-full"
+      data-component-id="quantity-picker"
+    >
       <button className="group py-2 px-4 border border-gray-400 rounded-l-full bg-white transition-all duration-300 hover:bg-gray-50 hover:shadow-sm hover:shadow-gray-300">
         <svg
           className="stroke-gray-900 group-hover:stroke-black"

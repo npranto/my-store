@@ -2,7 +2,10 @@ import React from "react";
 
 export default function CartBadge({ count = 0 }) {
   return (
-    <div className="flex justify-center items-center mr-3">
+    <div
+      className="flex justify-center items-center mr-3"
+      data-component-id="cart-badge"
+    >
       <div className="relative">
         <div className="t-0 absolute left-3">
           <p

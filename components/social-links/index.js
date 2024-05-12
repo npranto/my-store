@@ -79,7 +79,10 @@ const SOCIALS = [
 
 export default function SocialLinks({ socials = SOCIALS }) {
   return (
-    <div className="py-2 sm:py-4 sm:px-5 flex flex-wrap items-center">
+    <div
+      className="py-2 sm:py-4 sm:px-5 flex flex-wrap items-center"
+      data-component-id="social-links"
+    >
       <div className="flex gap-2">
         {socials.map((social) => {
           const SVGComponent = SVGs[social.name];

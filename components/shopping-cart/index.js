@@ -2,7 +2,7 @@ import React from "react";
 
 export default function ShoppingCart() {
   return (
-    <div className="w-full">
+    <div className="w-full" data-component-id="shopping-cart">
       <div className="flex flex-col lg:flex-row gap-4">
         <div className="cart-items md:grid md:grid-cols-2 lg:grid-cols-1 gap-4 lg:max-h-[75vh] lg:max-w-[60vw] overflow-auto">
           <div className="rounded-lg border-2 border-gray-100 p-4 lg:p-8 grid grid-cols-12 mb-8 gap-y-4">

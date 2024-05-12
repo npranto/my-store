@@ -5,7 +5,7 @@ import QuantityPicker from "../quantity-picker";
 
 export default function ProductActions({ product }) {
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-4" data-component-id="product-actions">
       {product.stockQuantity > 0 && (
         <div className="flex flex-col sm:flex-row items-center gap-4 w-full">
           <QuantityPicker />

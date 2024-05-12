@@ -16,6 +16,7 @@ export default function SearchBar({ className = "" }) {
   return (
     <form
       className={`w-auto py-4 sm:py-6 flex flex-col sm:flex-row flex-nowrap justify-center items-end gap-2 ${className}`}
+      data-component-id="search-bar"
       onSubmit={handleSearch}
     >
       <div className="w-full sm:w-72">

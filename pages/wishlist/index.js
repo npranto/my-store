@@ -5,7 +5,7 @@ import PageHeader from "@/components/page-header";
 
 export default function WishlistPage({ products = [] }) {
   return (
-    <section className="w-full">
+    <section className="w-full" data-page-id="wishlist">
       <PageHeader
         header="Wishlist"
         description="Waiting for the right moment? Your wishlist items are waiting for you, all in one place"

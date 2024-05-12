@@ -8,7 +8,10 @@ export default function FeaturedProducts({ header = "", products = [] }) {
   const visibleProducts = showMore ? products : products.slice(0, 4);
 
   return (
-    <section className="py-10 relative w-full">
+    <section
+      className="py-10 relative w-full"
+      data-component-id="featured-products"
+    >
       <h2 className="font-manrope font-bold text-2xl text-black mb-8">
         {header ? `${header}` : `Featured Products`}
       </h2>

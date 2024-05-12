@@ -2,7 +2,10 @@ import React from "react";
 
 const SideMenu = ({ menu = [], onItemClick = () => {} }) => {
   return (
-    <div className="flex flex-col justify-between bg-white">
+    <div
+      className="flex flex-col justify-between bg-white"
+      data-component-id="dashboard-side-menu"
+    >
       <ul className="gap-2 overflow-auto flex flex-row items-center lg:flex-col">
         {menu.map((item) => (
           <li key={item.name} className="w-full flex-grow text-nowrap">
