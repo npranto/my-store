@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
+import Image from "next/image";
 import React from "react";
 
 export default function ProductRatingsReviews() {
@@ -365,11 +366,16 @@ export default function ProductRatingsReviews() {
           </h3>
           <div className="flex sm:items-center flex-col min-[400px]:flex-row justify-between gap-5 mb-4">
             <div className="flex items-center gap-3">
-              <img
-                src="https://pagedone.io/asset/uploads/1704349572.png"
-                alt="John image"
-                className="w-8 h-8"
-              />
+              <div className="w-8 h-8">
+                <Image
+                  className="max-w-full max-h-full object-contain mx-auto"
+                  src="https://pagedone.io/asset/uploads/1704349572.png"
+                  alt="John image"
+                  width={32}
+                  height={32}
+                  priority
+                />
+              </div>
               <h6 className="font-semibold text-md leading-8 text-indigo-600 ">
                 John Watson
               </h6>
@@ -489,11 +495,16 @@ export default function ProductRatingsReviews() {
           </h3>
           <div className="flex sm:items-center flex-col min-[400px]:flex-row justify-between gap-5 mb-4">
             <div className="flex items-center gap-3">
-              <img
-                src="https://pagedone.io/asset/uploads/1704349572.png"
-                alt="John image"
-                className="w-8 h-8"
-              />
+              <div className="w-8 h-8">
+                <Image
+                  className="max-w-full max-h-full object-contain mx-auto"
+                  src="https://pagedone.io/asset/uploads/1704349572.png"
+                  alt="John image"
+                  width={32}
+                  height={32}
+                  priority
+                />
+              </div>
               <h6 className="font-semibold text-md leading-8 text-indigo-600 ">
                 John Watson
               </h6>

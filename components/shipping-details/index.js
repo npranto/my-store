@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 export default function ShippingDetails() {
@@ -13,10 +14,13 @@ export default function ShippingDetails() {
         <div className="flex justify-between items-start w-full">
           <div className="flex justify-center items-center space-x-4">
             <div className="w-8 h-8">
-              <img
-                className="w-full h-full"
+              <Image
+                className="max-w-full max-h-full object-contain mx-auto"
                 alt="logo"
                 src="https://i.ibb.co/L8KSdNQ/image-3.png"
+                width={32}
+                height={32}
+                priority
               />
             </div>
             <div className="flex justify-center md:justify-start items-center md:items-start flex-col xl:mt-8">
