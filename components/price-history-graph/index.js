@@ -2,8 +2,6 @@ import React from "react";
 import dynamic from "next/dynamic";
 import { XAxis, YAxis, CartesianGrid, Tooltip, Area } from "recharts";
 
-const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
-
 const AreaChart = dynamic(
   () => import("recharts").then((recharts) => recharts.AreaChart),
   { ssr: false }
